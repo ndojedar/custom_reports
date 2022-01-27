@@ -36,7 +36,7 @@
                                     <strong>Fecha Albarán:</strong>
                                     <p class="m-0" t-field="o.invoice_date"/>
                                 </div>
-                                <div class="col-auto mw-100 mb-2" t-if="o.invoice_date_due and o.move_type == 'out_invoice' and o.state == 'posted'" name="due_date">
+                                <div class="col-auto mw-100 mb-2">
                                     <strong>Pedido Cliente:</strong>
                                     <p class="m-0" t-field="o.client_order_ref"/>
                                 </div>
@@ -92,7 +92,7 @@
                                 </tbody>
                             </table>
                             <div class="clearfix">
-                                <div id="total" class="row">
+                                <div id="total" class="row" style="position: relative; bottom: -350px;">
                                     <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ml-auto">
                                         <table class="table table-sm align-bottom" style="page-break-inside: avoid;">
                                             <tr height="150px" class="border-black o_subtotal" style="background-color: #FFFFFF">
