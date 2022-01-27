@@ -18,7 +18,7 @@
                                         </p>
                                     </div>
                                     <div class="col col-5 offset-2">
-                                        <strong>Dirección del Centro:</strong>
+                                        <strong>Dirección del centro:</strong>
                                         <div t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}'/>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@
                             <br/>
                             <div id="informations" class="row mt32 mb32">
                                 <div class="col-auto mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
-                                    <strong>Fecha Factura:</strong>
+                                    <strong>Fecha Albarán:</strong>
                                     <p class="m-0" t-field="o.invoice_date"/>
                                 </div>
                                 <div class="col-auto mw-100 mb-2" t-if="o.invoice_date_due and o.move_type == 'out_invoice' and o.state == 'posted'" name="due_date">
@@ -94,7 +94,7 @@
                             <div class="clearfix">
                                 <div id="total" class="row">
                                     <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ml-auto">
-                                        <table class="table table-sm" style="page-break-inside: avoid;">
+                                        <table class="table table-sm align-bottom" style="page-break-inside: avoid;">
                                             <tr height="150px" class="border-black o_subtotal" style="background-color: #FFFFFF">
                                                 <td style="text-align:center">
                                                     <strong>Firma y Sello</strong>
