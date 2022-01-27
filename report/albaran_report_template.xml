@@ -36,8 +36,8 @@
                                     <strong>Fecha Albarán:</strong>
                                     <p class="m-0" t-field="o.invoice_date"/>
                                 </div>
-                                <div class="col-auto mw-100 mb-2">
-                                    <strong>Pedido Cliente:</strong>
+                                <div class="col-auto mw-100 mb-2" t-if="o.client_order_ref" name="order_ref">
+                                    <strong>Referencia Cliente:</strong>
                                     <p class="m-0" t-field="o.client_order_ref"/>
                                 </div>
                                 <div class="col-auto mw-100 mb-2" t-if="o.partner_id.ref" name="customer_code">
